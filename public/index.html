@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Dokku app</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Deployed with <code>git push dokku main</code></p>
+    <h1>Hello, <span id="attendee">…</span> 👋</h1>
+    <p class="lead">This page is running in a container on your own VM.</p>
+
+    <dl class="facts">
+      <div><dt>Container</dt><dd id="host">…</dd></div>
+      <div><dt>Release</dt><dd id="release">…</dd></div>
+      <div><dt>Started</dt><dd id="started">…</dd></div>
+      <div><dt>Background</dt><dd id="bg">…</dd></div>
+    </dl>
+
+    <button id="clicker" type="button">Clicked <span id="count">0</span> times</button>
+
+    <p class="hint">Try: <code>ssh dokku@dokku-userNN config:set myapp BG_COLOR=tomato</code>
+      then reload. No rebuild needed.</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

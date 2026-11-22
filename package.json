@@ -1,0 +1,13 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Tiny frontend app for the Dokku on Civo workshop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "license": "MIT"
+}
